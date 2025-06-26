@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Bootstrap Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Custom Flex Section */
+    .custom-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem 0;
+      background-color: #f9f9f9;
+    }
+
+    .custom-flex .item {
+      flex: 1 1 30%;
+      margin: 1rem;
+      text-align: center;
+    }
+
+    /* CSS Grid Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Card Hover */
+    .card:hover .btn {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f8f9fa;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MySite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" class="d-block w-100" alt="Explore Innovation">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Explore Innovation</h5>
+          <p>Discover the future with us.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" class="d-block w-100" alt="Learn to Code">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Learn to Code</h5>
+          <p>Get hands-on experience in tech.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Explore Innovation">
+  <div class="carousel-caption d-none d-md-block">
+    <h5>Learn to Code</h5>
+    <p>Get hands-on experience in tech.</p>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <section class="custom-flex">
+  <div class="item">
+  <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde72?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" class="img-fluid" alt="Startup">
+
+  <p>Empowering startups worldwide.</p>
+</div>
+
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" class="img-fluid" alt="Teamwork">
+    <p>Strong teams build strong futures.</p>
+  </div>
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" class="img-fluid" alt="Growth">
+    <p>Focusing on sustainable growth.</p>
+  </div>
+</section>
+
+
+  <!-- CSS Grid Gallery -->
+  <section class="gallery">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Gallery 1">
+    <img src="https://images.unsplash.com/photo-1511497584788-876760111969" alt="Gallery 2">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Gallery 3">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Gallery 4">
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Gallery 5">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Gallery 6">
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Gallery 7">
+    <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc" alt="Gallery 8">
+    <img src="https://images.unsplash.com/photo-1511497584788-876760111969" alt="Gallery 9">
+  </section>
+
+  <!-- Bootstrap Cards -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://habitatbroward.org/wp-content/uploads/2020/01/10-Benefits-Showing-Why-Education-Is-Important-to-Our-Society.jpg" class="card-img-top" alt="E-learning">
+          <div class="card-body">
+            <h5 class="card-title">E-learning</h5>
+            <p class="card-text">Access world-class education anywhere.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750%2Ch_564%2Cc_fill%2Cg_faces%2Cq_auto/https%3A//www.gcu.edu/sites/default/files/2025-02/student%20writing%20in%20notebook.jpg" class="card-img-top" alt="AI">
+          <div class="card-body">
+            <h5 class="card-title">Artificial Intelligence</h5>
+            <p class="card-text">Revolutionizing industries with AI.</p>
+            <a href="#" class="btn btn-primary">Discover</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://concernusa.org/uploads/concern-rs79954-chad-education.webp" class="card-img-top" alt="Technology">
+          <div class="card-body">
+            <h5 class="card-title">Technology</h5>
+            <p class="card-text">Shaping the future with innovation.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+    <a href="#" class="btn btn-secondary">Back to Top</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
